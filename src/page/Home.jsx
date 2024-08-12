@@ -28,7 +28,7 @@ const Home = () => {
                     <AboutUs />
                 </section>
 
-                {/* <section id='title'>
+                <section id='title'>
                     <Title />
                 </section>
 
@@ -44,7 +44,7 @@ const Home = () => {
                     <Chanel />
                 </section>
 
-                <section id='document'>
+                {/* <section id='document'>
                     <Document />
                 </section>
 
