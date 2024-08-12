@@ -17,9 +17,7 @@ const Register = () => {
         <div className="w-full h-[1100px] register relative">
             <div className="w-full h-[500px] pt-[110px] reg-bg flex items-center justify-center">
                 <div className="w-[90%] h-[60%] flex flex-col items-center justify-center mb-10">
-                    <h2 className="text-white font-semibold text-5xl w-[60%] text-center mb-6 animate-fadeIn">
-                        ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI IQRO TRAVEL BILAN BIRGA
-                    </h2>
+                    <h2 className="text-white font-semibold text-5xl w-[60%] text-center mb-6 animate-fadeIn">ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI IQRO TRAVEL BILAN BIRGA</h2>
                     <div className="w-[80px] h-0 border border-[#00806b] animate-grow"></div>
                     <p className="text-[#00806b] mt-6">Hurmat bilan - IQRO TRAVEL jamoasi</p>
                 </div>

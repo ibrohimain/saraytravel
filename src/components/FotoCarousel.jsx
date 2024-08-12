@@ -34,12 +34,13 @@ export default function FotoCarousel() {
             </div>
             <Slider {...settings} className="w-[85%] mx-auto gap-4 pt-[40px]">
                 {carousel.map((item, index) => (
-                    <div className="w-[85%] mx-auto">
-                        <div key={index} className="w-[400px] h-[300px] bg-red-500 shadow-lg flex items-center justify-center mr-4 rounded-[30px]">
-                            <img src={item.img} alt="Image 1" className="w-full h-full object-cover rounded-[30px]" />
+                    <div key={index} className="mr-4">  {/* 'key' attributi bu yerda */}
+                        <div className="w-[400px] h-[300px] bg-red-500 shadow-lg flex items-center justify-center rounded-[30px]">
+                            <img src={item.img} alt={`Image ${index + 1}`} className="w-full h-full object-cover rounded-[30px]" />
                         </div>
                     </div>
                 ))}
+
             </Slider>
         </div>
     );

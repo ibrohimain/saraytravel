@@ -16,14 +16,14 @@ import Footer from '../components/Footer';
 
 const Home = () => {
     return (
-        <div className='w-[100%] h-auto mx-auto'>
-            <div className='bg-img w-[100%] h-[1000px]'>
+        <div className='2xl:w-[1510px] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-auto mx-auto'>
+            <div className='bg-img w-[100%] 2xl:h-[1000px] xl:h-[900px] lg:h-[800px] md:h-[800px] sm:h-[800px] h-[800px]'>
                 <Header />
 
                 <section id='homeText'>
                     <HomeText />
                 </section>
-
+                {/* 
                 <section id='aboutUs'>
                     <AboutUs />
                 </section>
@@ -70,7 +70,7 @@ const Home = () => {
 
                 <section id='footer'>
                     <Footer />
-                </section>
+                </section> */}
             </div>
         </div>
     );

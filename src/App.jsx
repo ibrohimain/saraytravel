@@ -4,7 +4,7 @@ import Home from './page/Home'
 
 const App = () => {
   return (
-    <div className='w-[1510px] h-auto mx-auto'>
+    <div className='w-[100%] h-auto mx-auto'>
       <Home />
     </div>
   )
