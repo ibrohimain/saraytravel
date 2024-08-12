@@ -17,18 +17,18 @@ import Footer from '../components/Footer';
 const Home = () => {
     return (
         <div className='2xl:w-[1510px] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-auto mx-auto'>
-            <div className='bg-img w-[100%] 2xl:h-[1000px] xl:h-[900px] lg:h-[800px] md:h-[800px] sm:h-[800px] h-[800px]'>
+            <div className='bg-img w-[100%] 2xl:h-[1000px] xl:h-[900px] lg:h-[800px] md:h-[800px] sm:h-[800px] h-[650px]'>
                 <Header />
 
                 <section id='homeText'>
                     <HomeText />
                 </section>
-                {/* 
+
                 <section id='aboutUs'>
                     <AboutUs />
                 </section>
 
-                <section id='title'>
+                {/* <section id='title'>
                     <Title />
                 </section>
 
