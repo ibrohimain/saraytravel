@@ -4,17 +4,17 @@ import maslahat from '../assets/maslahat.png'
 
 const Document = () => {
     return (
-        <div className='2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[1100px] xl:h-[1100px] lg:h-[1100px] md:h-[1700px] sm:h-[1700px] h-[1800px] mx-auto document flex items-center justify-center'>
-            <div className='2xl:w-[85%] xl:w-[85%] lg:w-[85%] md:w-[85%] sm:w-[85%] w-[85%] h-[80%] bg-white shadow-2xl rounded-[30px] flex items-center justify-center'>
-                <div className='w-[85%] h-[85%] 2xl:flex xl:flex lg:flex md:block sm:block block'>
+        <div className='2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[1100px] xl:h-[1100px] lg:h-[1100px] md:h-[1700px] sm:h-[1700px] h-[1200px] mx-auto document flex items-center justify-center'>
+            <div className='2xl:w-[85%] xl:w-[85%] lg:w-[85%] md:w-[85%] sm:w-[85%] w-[85%] 2xl:h-[80%] xl:h-[80%] lg:h-[80%] md:h-[80%] sm:h-[80%] h-[85%] bg-white shadow-2xl rounded-[30px] flex items-center justify-center'>
+                <div className='w-[85%] 2xl:h-[85%] xl:h-[85%] lg:h-[85%] md:h-[95%] sm:h-[85%] h-[95%] 2xl:flex xl:flex lg:flex md:block sm:block block justify-between'>
                     <div className='2xl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[60%] sm:h-[60%] h-[70%]'>
                         <div className='w-[100%] h-[20%] leading-10'>
                             <h2 className='2xl:text-[40px] xl:text-[38px] lg:text-[36px] md:text-[34px] sm:text-[32px] text-[30px] text-[black] font-semibold'>Umra safari uchun</h2>
                             <span className='2xl:text-[40px] xl:text-[38px] lg:text-[36px] md:text-[34px] sm:text-[32px] text-[30px] text-[#00805a] font-semibold'>kerakli hujjatlar</span>
                         </div>
-                        <div className='w-[100%] h-[80%] grid grid-cols-2 gap-8'>
+                        <div className='w-[100%] h-[80%] grid grid-cols-2 2xl:gap-8 xl:gap-8 lg:gap-6 md:gap-6 sm:gap-6 gap-4'>
                             {travel.map((item, index) => (
-                                <div key={index} className=' w-[100%] h-[270px]'>
+                                <div key={index} className=' w-[100%] 2xl:h-[270px] xl:h-[270px] lg:h-[270px] md:h-[270px] sm:h-[270px] h-[250px] '>
                                     <div>
                                         <img src={item.img} alt="img" className='w-[140px] rounded-[30px]' />
                                     </div>
@@ -27,8 +27,8 @@ const Document = () => {
 
                         </div>
                     </div>
-                    <div className='2xl:w-[40%] xl:w-[40%] lg:w-[40%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[40%] sm:h-[40%] h-[30%] flex items-center justify-end'>
-                        <div className='2xl:w-[350px] xl:w-[350px] lg:w-[350px] md:w-[100%] sm:w-[100%] w-[100%] h-[90%] border border-black'>
+                    <div className='2xl:w-[40%] xl:w-[40%] lg:w-[35%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[40%] sm:h-[40%] h-[30%] flex items-center justify-end'>
+                        <div className='2xl:w-[350px] xl:w-[350px] lg:w-[350px] md:w-[100%] sm:w-[100%] w-[100%] h-[90%]'>
                             <div className='w-[100%] h-[70%]'>
                                 <img src={maslahat} alt="img" className='w-[100%] h-[100%] shadow-2xl rounded-[30px]' />
                             </div>
