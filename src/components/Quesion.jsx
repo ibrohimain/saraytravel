@@ -90,7 +90,7 @@ const Accordion = () => {
     ];
 
     return (
-        <div className='w-[100%] question h-[700px]'>
+        <div className='w-[100%] question h-[auto] pt-6 pb-6'>
             <div className='w-[85%] h-[100%] mx-auto'>
                 <div className="w-[100%] mx-auto grid grid-cols-1 gap-4">
                     {faqItems.map((item, index) => (

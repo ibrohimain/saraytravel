@@ -1,11 +1,13 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { carousel } from "../data/Carousel";
+import React from 'react'
+import Slider from 'react-slick'
+import { offer } from '../data/offer'
+import { Link as ScrollLink } from 'react-scroll'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import { carousel } from '../data/Carousel'
 
-export default function FotoCarousel() {
-    var settings = {
+const FotoCarousel = () => {
+    const settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -16,32 +18,44 @@ export default function FotoCarousel() {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                },
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
             },
             {
-                breakpoint: 640,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                },
-            },
-        ],
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
-        <div className="w-[100%] carousel h-[650px] pt-[100px]">
-            <div className="w-[85%] mx-auto flex items-center justify-center pt-[60px]">
-                <h2 className="text-[40px] text-black font-semibold">FOTO <span className="text-[#00805e]">GALEREYA</span></h2>
+        <div className='w-full h-[600px] offer'>
+            <div className='w-[85%] mx-auto pt-20'>
+                <div className='w-full flex flex-col justify-center items-center'>
+                    <h2 className='text-black font-semibold text-[30px]'>Maxsus takliflar va yo’nalishlar</h2>
+                    <p className='text-black text-[20px] mt-4'>Umra va Haj safari tariflar</p>
+                </div>
+                <div className='w-full mt-10'>
+                    <Slider {...settings}>
+                        {carousel.map((item, index) => (
+                            <div key={index} className='px-4'>
+                                <div className='custom-shadow custom-shadow-hover w-full h-[300px] bg-white rounded-[30px] cursor-pointer transform transition-transform duration-300 hover:translate-y-[-8px] hover:shadow-lg flex items-center justify-center'>
+                                    <div className='w-full h-[90%] flex items-center justify-center'>
+                                        <img src={item.img} alt="" className='w-[90%] h-[100%] rounded-[5px]' />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
             </div>
-            <Slider {...settings} className="w-[85%] mx-auto gap-4 pt-[40px]">
-                {carousel.map((item, index) => (
-                    <div key={index} className="mr-4">  {/* 'key' attributi bu yerda */}
-                        <div className="w-[400px] h-[300px] bg-red-500 shadow-lg flex items-center justify-center rounded-[30px]">
-                            <img src={item.img} alt={`Image ${index + 1}`} className="w-full h-full object-cover rounded-[30px]" />
-                        </div>
-                    </div>
-                ))}
-
-            </Slider>
         </div>
-    );
+    )
 }
+
+export default FotoCarousel

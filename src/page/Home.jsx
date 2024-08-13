@@ -48,7 +48,7 @@ const Home = () => {
                     <Document />
                 </section>
 
-                {/* <section id='muttafqun'>
+                <section id='muttafqun'>
                     <Muttafqun />
                 </section>
 
@@ -70,7 +70,7 @@ const Home = () => {
 
                 <section id='footer'>
                     <Footer />
-                </section> */}
+                </section>
             </div>
         </div>
     );

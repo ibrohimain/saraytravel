@@ -17,50 +17,25 @@ const Register = () => {
         <div className="w-full h-[1100px] register relative">
             <div className="w-full h-[500px] pt-[110px] reg-bg flex items-center justify-center">
                 <div className="w-[90%] h-[60%] flex flex-col items-center justify-center mb-10">
-                    <h2 className="text-white font-semibold text-5xl w-[60%] text-center mb-6 animate-fadeIn">ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI IQRO TRAVEL BILAN BIRGA</h2>
+                    <h2 className="text-white font-semibold 2xl:text-[40px] xl:text-[38px] lg:text-[38px] md:text-[34px] sm:text-[30px] text-[20px] w-[60%] text-center mb-6 animate-fadeIn">ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI IQRO TRAVEL BILAN BIRGA</h2>
                     <div className="w-[80px] h-0 border border-[#00806b] animate-grow"></div>
-                    <p className="text-[#00806b] mt-6">Hurmat bilan - IQRO TRAVEL jamoasi</p>
+                    <p className="text-[#00806b] mt-6 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] ">Hurmat bilan - IQRO TRAVEL jamoasi</p>
                 </div>
             </div>
-            <div className="w-[85%] mx-auto h-[600px] flex justify-between absolute left-[7.5%] top-[40%]">
-                <div className="w-[48%] h-full shadow-2xl bg-white rounded-[30px] animate-slideInLeft">
+            <div className="w-[85%] mx-auto h-[600px] 2xl:flex xl:flex lg:flex md:flex sm:block block  justify-between absolute left-[7.5%] top-[40%]">
+                <div className="2xl:w-[48%] xl:w-[48%] lg:w-[48%] md:w-[48%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[50%] h-[50%] 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-6 mt-6 shadow-2xl bg-white rounded-[30px] animate-slideInLeft">
                     <iframe src="https://yandex.uz/map-widget/v1/?ll=67.822268%2C40.132100&z=17.51&l=map&pt=67.822268,40.132100,pm2dgl" width="100%" height="100%" frameborder="1" allowfullscreen="true" className='rounded-[30px] shadow-2xl'></iframe>
 
                 </div>
-                <div className="w-[48%] h-full shadow-2xl bg-white rounded-[30px] flex items-center justify-center animate-slideInRight">
-                    <div className="w-[85%] h-[85%]">
-                        <div className="w-full h-auto flex items-center gap-4">
-                            <h2 className="text-black text-3xl font-semibold w-[250px]">UMRA SAFARI UCHUN ARIZA</h2>
+                <div className="2xl:w-[48%] xl:w-[48%] lg:w-[48%] md:w-[48%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[50%] h-[50%] 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-6 mt-6 shadow-2xl bg-white rounded-[30px] flex items-center justify-center animate-slideInRight">
+                    <div className="w-[85%] h-[35%]">
+                        <div className="w-full h-auto 2xl:flex xl:flex lg:flex md:flex sm:flex block items-center gap-4">
+                            <h2 className="text-black 2xl:text-[32px] xl:text-[30px] lg:text-[28px] md:text-[26px] sm:text-[24px] text-[18px] font-semibold w-[250px] 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-0 mb-4">UMRA SAFARI UCHUN ARIZA</h2>
                             <span className="px-3 py-[0.7rem] bg-red-500 rounded text-white text-sm font-medium animate-pulse">Chegirma</span>
                         </div>
-                        <form onSubmit={handleSubmit} className="mt-10">
-                            <input type="text" name="name" id="name" className="w-full h-[55px] border border-black rounded mb-4 pl-2 focus:border-green-500" placeholder="Ismingiz" required />
-                            <input type="tel" name="phone" id="phone" className="w-full h-[55px] border border-black rounded mb-4 pl-2 focus:border-green-500" placeholder="Telefon raqamingiz" required />
-                            <div className="flex items-center gap-4 mb-4">
-                                <select name="month" id="month" className="w-[45%] h-[55px] border border-black rounded-lg text-black focus:border-green-500" required>
-                                    <option value="">Safar oyi</option>
-                                    <option value="2">Fevral</option>
-                                    <option value="3">Mart</option>
-                                </select>
-                                <div className="flex items-center gap-4">
-                                    <span className="text-black">Kattalar</span>
-                                    <div className="flex gap-3 items-center">
-                                        <button type="button" onClick={decrementAdults} className="w-[30px] h-[30px] bg-gray-200 rounded text-black font-semibold">-</button>
-                                        <span className="text-black px-6 py-4 border rounded">{adults}</span>
-                                        <button type="button" onClick={incrementAdults} className="w-[30px] h-[30px] bg-gray-200 rounded text-black font-semibold">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <select name="tariff" id="tariff" className="w-full h-[55px] rounded-lg border border-black mb-4 text-black focus:border-green-500" required>
-                                <option value="">Tarifni tanlang</option>
-                                <option value="standard">Standart</option>
-                                <option value="premium">Premium</option>
-                            </select>
-                            <button type="submit" className="w-full h-[55px] bg-[#00806b] rounded-lg text-white font-semibold text-lg hover:bg-[#006652] transition-colors">
-                                Yuborish
-                            </button>
-                            <p className="text-[#008077] text-center mt-6 animate-fadeIn">Bizni tanlaganingiz uchun katta Rahmat!</p>
-                        </form>
+                        <div className='w-[100%] flex items-center mt-10'>
+                            <button className='bg-[#007580] text-white py-2.5 px-8 rounded-[5px]'>Ro'yxatdan o'tish</button>
+                        </div>
                     </div>
                 </div>
             </div>
