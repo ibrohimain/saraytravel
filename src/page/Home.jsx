@@ -44,11 +44,11 @@ const Home = () => {
                     <Chanel />
                 </section>
 
-                {/* <section id='document'>
+                <section id='document'>
                     <Document />
                 </section>
 
-                <section id='muttafqun'>
+                {/* <section id='muttafqun'>
                     <Muttafqun />
                 </section>
 
