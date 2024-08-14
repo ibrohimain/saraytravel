@@ -1,6 +1,7 @@
 import React from 'react'
 import { travel } from '../data/travel'
 import maslahat from '../assets/maslahat.png'
+import { Link } from 'react-router-dom'
 
 const Document = () => {
     return (
@@ -33,7 +34,9 @@ const Document = () => {
                                 <img src={maslahat} alt="img" className='w-[100%] h-[100%] shadow-2xl rounded-[30px]' />
                             </div>
                             <div className='w-[100%] h-[30%]'>
-                                <button className='w-[100%] h-[60px] bg-[#008075] text-white text-[18px] font-medium rounded-[15px] mt-10'>Bepul Maslahat</button>
+                                <Link to='https://t.me/Muxtorov_Omonxuja'>
+                                    <button className='w-[100%] h-[60px] bg-[#008075] text-white text-[18px] font-medium rounded-[15px] mt-10'>Bepul Maslahat</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

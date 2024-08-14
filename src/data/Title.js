@@ -36,7 +36,7 @@ export const title = [
     {
         id: 5,
         number: '05',
-        name: "Aeroportda kutib olish va kuzatib qo'yish",
+        name: "Haj safari boshlanganidan to tugaganiga qadar siz bilan hamroh bo'lish",
         img: besh,
     },
     {
@@ -60,7 +60,7 @@ export const title = [
     {
         id: 9,
         number: '09',
-        name: "Islom ta'limiga ega bo'lgan professional gidlar",
+        name: "Islom ta'limiga ega bo'lgan professional ellik boshilar",
         img: toqqiz,
     },
 

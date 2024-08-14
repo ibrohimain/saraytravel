@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Link as ScrollLink } from 'react-scroll'
 
 const HomeText = () => {
@@ -13,10 +14,12 @@ const HomeText = () => {
                             Ariza berish
                         </ScrollLink>
                     </button>
-                    <p className='mt-4 underline cursor-pointer'>Maslahat olish</p>
+                    <Link to='https://t.me/Muxtorov_Omonxuja'>
+                        <p className='mt-4 underline cursor-pointer'>Maslahat olish</p>
+                    </Link>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

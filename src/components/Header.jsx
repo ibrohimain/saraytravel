@@ -111,12 +111,12 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className=' cursor-pointer 2xl:block xl:flex lg:hidden md:hidden sm:hidden hidden items-center justify-center text-[40px] font-semibold'>
-                        <h2>AL SARAY</h2>
+                    <div className=' cursor-pointer 2xl:block xl:flex lg:hidden md:flex sm:flex flex items-center justify-center text-[40px] font-semibold'>
+                        <h2 className='2xl:text-[40px] xl:text-[40px] lg:text-[38px] md:text-[32px] sm:text-[32px] text-[28px]'>AL SARAY</h2>
                     </div>
-                    <div className='flex items-center gap-8'>
+                    <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden items-center gap-8'>
                         <Link to='tel:+998880156869'>
-                            <button className='2xl:flex xl:flex lg:flex md:flex sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500'>
+                            <button className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500 2xl:text-[16px] xl:text-[16px] lg:text-[16px]'>
                                 <BiPhone />
                                 +998(88)025-68-69
                             </button>
