@@ -49,7 +49,7 @@ const Header = () => {
 
     return (
         <div
-            className={`2xl:w-[1510px] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-[90px] mx-auto fixed header z-50 ${scrolled ? 'scrolled' : ''}`}
+            className={`2xl:w-[1500px] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-[90px] mx-auto fixed header z-50 ${scrolled ? 'scrolled' : ''}`}
             style={{ backgroundColor: 'var(--header-bg-color)' }}
         >
             <div className='2xl:w-[85%] xl:w-[85%] lg:w-[85%] md:w-[85%] sm:w-[85%] w-[85%] mx-auto h-[100%]'>
@@ -115,7 +115,7 @@ const Header = () => {
                         <h2>AL SARAY</h2>
                     </div>
                     <div className='flex items-center gap-8'>
-                        <Link to='tel:+998880256869'>
+                        <Link to='tel:+998880156869'>
                             <button className='2xl:flex xl:flex lg:flex md:flex sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500'>
                                 <BiPhone />
                                 +998(88)025-68-69

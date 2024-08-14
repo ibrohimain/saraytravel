@@ -19,7 +19,7 @@ const Footer = () => {
     return (
         <div className='2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] footer h-auto pb-4 pt-4'>
             <div className='2xl:w-[85%] xl:w-[85%] lg:w-[85%] md:w-[85%] sm:w-[85%] w-[85%] h-[100%] mx-auto flex flex-col items-end'>
-                <div className='grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 justify-between w-[100%] h-auto pt-10 pb-10 '>
+                <div className='grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-between w-[100%] h-auto pt-10 pb-10 '>
                     <ul className='2xl:block xl:block lg:block md:hidden sm:hidden hidden'>
                         <li className='text-[50px] text-[gold]'>LOGO</li>
                     </ul>
