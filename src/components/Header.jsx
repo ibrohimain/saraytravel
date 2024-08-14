@@ -4,6 +4,8 @@ import { BsInstagram, BsTelegram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as ScrollLink } from 'react-scroll';
+import logo from '../assets/logo-removebg-preview (2).png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -109,21 +111,27 @@ const Header = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='2zl:flex xl:flex lg:hidden md:hidden sm:hidden hidden items-center justify-center text-[40px] font-semibold'>
-                        Saray travel
+                    <div className=' cursor-pointer 2xl:block xl:flex lg:hidden md:hidden sm:hidden hidden items-center justify-center text-[40px] font-semibold'>
+                        <h2>AL SARAY</h2>
                     </div>
                     <div className='flex items-center gap-8'>
-                        <button className='2xl:flex xl:flex lg:flex md:flex sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500'>
-                            <BiPhone />
-                            +998(88)025-68-69
-                        </button>
+                        <Link to='tel:+998880256869'>
+                            <button className='2xl:flex xl:flex lg:flex md:flex sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500'>
+                                <BiPhone />
+                                +998(88)025-68-69
+                            </button>
+                        </Link>
                         <ul className='flex items-center gap-2 text-white text-[20px]'>
-                            <li className='cursor-pointer py-3 px-3 rounded-full bg-[#458fea]'>
-                                <BsTelegram />
-                            </li>
-                            <li className='cursor-pointer py-3 px-3 rounded-full bg-red-600'>
-                                <BsInstagram />
-                            </li>
+                            <Link to='https://t.me/AL_Saray_Travel'>
+                                <li className='cursor-pointer py-3 px-3 rounded-full bg-[#458fea]'>
+                                    <BsTelegram />
+                                </li>
+                            </Link>
+                            <Link to='https://www.instagram.com/al_saray_travel/'>
+                                <li className='cursor-pointer py-3 px-3 rounded-full bg-red-600'>
+                                    <BsInstagram />
+                                </li>
+                            </Link>
                             <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
                                 <FaFacebook />
                             </li>

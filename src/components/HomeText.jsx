@@ -13,7 +13,7 @@ const HomeText = () => {
                             Ariza berish
                         </ScrollLink>
                     </button>
-                    <p className='mt-4 underline cursor-pointer'>Malahat olish</p>
+                    <p className='mt-4 underline cursor-pointer'>Maslahat olish</p>
                 </div>
             </div>
         </div>
