@@ -18,9 +18,9 @@ const Register = () => {
         <div className="w-full h-[1100px] register relative">
             <div className="w-full h-[500px] pt-[110px] reg-bg flex items-center justify-center">
                 <div className="w-[90%] h-[60%] flex flex-col items-center justify-center mb-10">
-                    <h2 className="text-white font-semibold 2xl:text-[40px] xl:text-[38px] lg:text-[38px] md:text-[34px] sm:text-[30px] text-[20px] w-[60%] text-center mb-6 animate-fadeIn">ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI IQRO TRAVEL BILAN BIRGA</h2>
+                    <h2 className="text-white font-semibold 2xl:text-[40px] xl:text-[38px] lg:text-[38px] md:text-[34px] sm:text-[30px] text-[20px] w-[60%] text-center mb-6 animate-fadeIn">ISHONCHLI VA HAVFSIZ UMRA ZIYORATLARI AL SARAY TRAVEL BILAN BIRGA</h2>
                     <div className="w-[80px] h-0 border border-[#00806b] animate-grow"></div>
-                    <p className="text-[#00806b] mt-6 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] ">Hurmat bilan - IQRO TRAVEL jamoasi</p>
+                    <p className="text-[#00806b] mt-6 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[15px] sm:text-[14px] text-[12px] ">Hurmat bilan - AL SARAY TRAVEL jamoasi</p>
                 </div>
             </div>
             <div className="w-[85%] mx-auto h-[600px] 2xl:flex xl:flex lg:flex md:flex sm:block block  justify-between absolute left-[7.5%] top-[40%]">

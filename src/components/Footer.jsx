@@ -26,35 +26,35 @@ const Footer = () => {
 
                     <ul className="mt-4 md:mt-0 flex flex-col">
                         <h2 className="text-2xl font-semibold text-white">Ссылки</h2>
-                        <ScrollLink to="aboutUs" smooth duration={500} className="mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <ScrollLink to="aboutUs" smooth duration={500} className="mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             Biz haqimizda
                         </ScrollLink>
-                        <ScrollLink to="offer" smooth duration={500} className="mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <ScrollLink to="offer" smooth duration={500} className="mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             Tariflar
                         </ScrollLink>
-                        <ScrollLink to="document" smooth duration={500} className="mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <ScrollLink to="document" smooth duration={500} className="mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             Hujjatlar
                         </ScrollLink>
-                        <ScrollLink to="quesion" smooth duration={500} className="mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <ScrollLink to="quesion" smooth duration={500} className="mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             Savollar
                         </ScrollLink>
-                        <ScrollLink to="footer" smooth duration={500} className="mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <ScrollLink to="footer" smooth duration={500} className="mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             Aloqa
                         </ScrollLink>
                     </ul>
 
                     <ul className="mt-8 md:mt-0">
                         <h2 className="text-2xl font-semibold text-white">ALOQA</h2>
-                        <a href="tel:+998978000571" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <a href="tel:+998978000571" className="flex gap-2 items-center mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             <FaPhoneAlt className="text-white" /> +998(97) 800-05-71
                         </a>
-                        <a href="tel:+998985615545" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <a href="tel:+998985615545" className="flex gap-2 items-center mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
                             <FaPhoneAlt className="text-white" /> +998(98) 561-55-45
                         </a>
-                        <a href="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
-                            <MdEmail className="text-white" /> saraytravel
+                        <a href="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200">
+                            <MdEmail className="text-white" /> alsaraytravel777@gmail.com
                         </a>
-                        <a href="#" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200 w-full">
+                        <a href="#" className="flex gap-2 items-center mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200 w-full">
                             <FaLocationDot className="text-white" /> Jizzax viloyati Sharof Rashidov ko'chasi, Toshkentlik
                         </a>
                     </ul>
@@ -93,7 +93,7 @@ const Footer = () => {
                     <p className="text-white text-sm">© 2022-2023 ООО «AL SARAY»</p>
                     <ul className="flex gap-4 items-center">
                         <li className="text-white font-semibold hidden md:block">Yaratuvchi</li>
-                        <li className="text-white font-semibold hidden md:block">IT park</li>
+                        <li className="text-white font-semibold hidden md:block">"OSIYO AKT" MCHJ</li>
                         <li className="w-9 h-9 bg-gray-300 bg-opacity-25 rounded-full flex items-center justify-center text-white cursor-pointer" onClick={scrollToTop}>
                             <BiUpArrow />
                         </li>
