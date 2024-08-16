@@ -92,7 +92,7 @@ const Footer = () => {
                 <div className="w-full h-24 border-t border-gray-600 flex justify-between items-center">
                     <p className="text-white text-sm">© 2022-2023 ООО «AL SARAY»</p>
                     <ul className="flex gap-4 items-center">
-                        <li className="text-white font-semibold hidden md:block">Yaratuvchi</li>
+                        <li className="text-white font-semibold hidden md:block">Dasturchi</li>
                         <li className="text-white font-semibold hidden md:block">"OSIYO AKT" MCHJ</li>
                         <li className="w-9 h-9 bg-gray-300 bg-opacity-25 rounded-full flex items-center justify-center text-white cursor-pointer" onClick={scrollToTop}>
                             <BiUpArrow />
