@@ -1,7 +1,11 @@
+import bir from '../assets/offer/img1.jpg'
+import ikki from '../assets/offer/img4.jpeg'
+import uch from '../assets/offer/img3.jpg'
+
 export const offer = [
     {
         id: 1,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7mR88AnbsllbIz7d_AvHExFHbbo8RPjdsCg&s",
+        img: bir,
         name: "UMRZ ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
         price: "15 860 000 SO'M",
@@ -9,7 +13,7 @@ export const offer = [
     },
     {
         id: 2,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpb5hOqdlCx4UMUtAUOIuyfsynRq22MgjrSg&s",
+        img: ikki,
         name: "UMRZ ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
         price: "16 470 000 SO'M",
@@ -17,7 +21,7 @@ export const offer = [
     },
     {
         id: 3,
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbyJY3caphW5-b5auHXBpWVopSWYmvhlRiFQ&s",
+        img: uch,
         name: "UMRZ ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
         price: "22 570 000 SO'M",

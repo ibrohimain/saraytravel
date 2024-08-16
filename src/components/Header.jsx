@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { BiPhone } from 'react-icons/bi';
 import { BsInstagram, BsTelegram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../assets/logo-removebg-preview (2).png'
+import logo from '../assets/al_sarays-removebg-preview.png'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const menuRef = useRef(null); // Ref for the menu
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,27 +28,32 @@ const Header = () => {
         };
 
         const handleResize = () => {
-            // Check if the window width is greater than 640px (the `sm` breakpoint in Tailwind CSS)
             if (window.innerWidth >= 640 && menuOpen) {
                 setMenuOpen(false);
             }
         };
 
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false); // Close menu if clicked outside
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
+        document.addEventListener('mousedown', handleClickOutside); // Listen for clicks outside the menu
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
+            document.removeEventListener('mousedown', handleClickOutside); // Cleanup listener
         };
     }, [menuOpen]);
 
-    // Toggle menu visibility
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Handle link click and close menu
     const handleLinkClick = () => {
         setMenuOpen(false);
     };
@@ -70,7 +76,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
-                                    onClick={handleLinkClick} // Close menu on click
+                                    onClick={handleLinkClick}
                                 >
                                     Biz haqimizda
                                 </ScrollLink>
@@ -81,7 +87,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
-                                    onClick={handleLinkClick} // Close menu on click
+                                    onClick={handleLinkClick}
                                 >
                                     Tariflar
                                 </ScrollLink>
@@ -92,7 +98,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
-                                    onClick={handleLinkClick} // Close menu on click
+                                    onClick={handleLinkClick}
                                 >
                                     Hujjatlar
                                 </ScrollLink>
@@ -103,7 +109,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
-                                    onClick={handleLinkClick} // Close menu on click
+                                    onClick={handleLinkClick}
                                 >
                                     Savollar
                                 </ScrollLink>
@@ -114,15 +120,16 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
-                                    onClick={handleLinkClick} // Close menu on click
+                                    onClick={handleLinkClick}
                                 >
                                     Aloqa
                                 </ScrollLink>
                             </li>
                         </ul>
                     </div>
-                    <div className=' cursor-pointer 2xl:block xl:flex lg:hidden md:flex sm:flex flex items-center justify-center text-[40px] font-semibold'>
-                        <h2 className='2xl:text-[40px] xl:text-[40px] lg:text-[38px] md:text-[32px] sm:text-[32px] text-[28px]'>AL SARAY</h2>
+                    <div className='cursor-pointer 2xl:block xl:flex lg:hidden md:flex sm:flex flex items-center justify-center text-[40px] font-semibold'>
+                        {/* <h2 className='2xl:text-[40px] xl:text-[40px] lg:text-[38px] md:text-[32px] sm:text-[32px] text-[28px]'>AL SARAY</h2> */}
+                        <img src={logo} alt="" className='2xl:w-[250px] xl:w-[250px] lg:w-[250px] md:w-[200px] sm:w-[180px] w-[200px]' />
                     </div>
                     <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden items-center gap-8'>
                         <Link to='tel:+998880156869'>
@@ -150,7 +157,7 @@ const Header = () => {
                 </div>
             </div>
             {menuOpen && (
-                <div className='fixed top-[90px] left-0 w-[350px] h-[450px] bg-black bg-opacity-30 z-40 shadow-lg text-white'>
+                <div ref={menuRef} className='fixed top-[90px] left-0 w-[350px] h-[450px] bg-black bg-opacity-30 z-40 shadow-lg text-white'>
                     <ul className='flex flex-col items-start p-4'>
                         <li className='py-2'>
                             <ScrollLink to='aboutUs' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>

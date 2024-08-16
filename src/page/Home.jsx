@@ -36,9 +36,9 @@ const Home = () => {
                     <Offer />
                 </section>
 
-                <section id='partner'>
+                {/* <section id='partner'>
                     <Partner />
-                </section>
+                </section> */}
 
                 <section id='chanel'>
                     <Chanel />

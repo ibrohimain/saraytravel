@@ -3,75 +3,112 @@ import { BiUpArrow } from 'react-icons/bi'
 import { BsInstagram, BsTelegram } from 'react-icons/bs'
 import { FaFacebook, FaPhoneAlt } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
-import { GiTopHat } from 'react-icons/gi'
 import { MdEmail } from 'react-icons/md'
+import { Link as ScrollLink } from 'react-scroll'
 import { Link } from 'react-router-dom'
+import logo from '../assets/al_sarays-removebg-preview.png'
 
 const Footer = () => {
 
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', // This will create a smooth scrolling effect
+            behavior: 'smooth',
         });
     }
 
-
     return (
-        <div className='2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] footer h-auto pb-4 pt-4'>
-            <div className='2xl:w-[85%] xl:w-[85%] lg:w-[85%] md:w-[85%] sm:w-[85%] w-[85%] h-[100%] mx-auto flex flex-col items-end'>
-                <div className='grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-between w-[100%] h-auto pt-10 pb-10 '>
-                    <ul className='2xl:block xl:block lg:block md:hidden sm:hidden hidden'>
-                        <li className='text-[50px] text-[gold]'>AL SARAY</li>
+        <div className='w-full footer h-auto pb-4 pt-4'>
+            <div className='w-11/12 mx-auto flex flex-col items-end'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between w-full h-auto pt-10 pb-10'>
+                    <ul className='hidden md:block'>
+                        <img src={logo} alt="Logo" className='w-52' />
                     </ul>
-                    <ul>
-                        <h2 className='text-[22px] font-semibold text-white'>Ссылки</h2>
-                        <li className='2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] mt-4 hover:text-white cursor-pointer [transition:0.2s] '>Biz haqimizda</li>
-                        <li className='2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] mt-4 hover:text-white cursor-pointer [transition:0.2s] '>Tariflar</li>
-                        <li className='2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] mt-4 hover:text-white cursor-pointer [transition:0.2s] '>Hujjatlar</li>
-                        <li className='2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] mt-4 hover:text-white cursor-pointer [transition:0.2s] '>Savollar</li>
-                        <li className='2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] mt-4 hover:text-white cursor-pointer [transition:0.2s] '>Aloqa</li>
+                    <ul className='mt-4 md:mt-0 flex flex-col'>
+                        <h2 className='text-2xl font-semibold text-white'>Ссылки</h2>
+                        <ScrollLink to='aboutUs' smooth={true} duration={500} className='mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            Biz haqimizda
+                        </ScrollLink>
+                        <ScrollLink to='offer' smooth={true} duration={500} className='mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            Tariflar
+                        </ScrollLink>
+                        <ScrollLink to='document' smooth={true} duration={500} className='mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            Hujjatlar
+                        </ScrollLink>
+                        <ScrollLink to='quesion' smooth={true} duration={500} className='mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            Savollar
+                        </ScrollLink>
+                        <ScrollLink to='footer' smooth={true} duration={500} className='mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            Aloqa
+                        </ScrollLink>
                     </ul>
-                    <ul className='2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-4'>
-                        <li><h2 className='text-[22px] text-white font-semibold'>ALOQA</h2></li>
-                        <li className='flex gap-2 items-center 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] hover:text-white cursor-pointer [transition:0.2s]  mt-4 '><FaPhoneAlt className='text-white' /> +998(91) 877-10-10</li>
-                        <li className='flex gap-2 items-center 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] hover:text-white cursor-pointer [transition:0.2s]  mt-4 '><FaPhoneAlt className='text-white' /> +998(88) 814-10-10</li>
-                        <li className='flex gap-2 items-center 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] hover:text-white cursor-pointer [transition:0.2s]  mt-4 '><MdEmail className='text-white' /> saraytravel</li>
-                        <li className='flex gap-2 items-center 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px] text-[16px] hover:text-white cursor-pointer [transition:0.2s]  mt-4 w-[200px] '><FaLocationDot className='text-white' />yakkasaroy tumani palonchi kocha</li>
-                    </ul>
-                    <div className='2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-8 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%]'>
-                        <h2 className='text-white font-semibold text-[22px]'>Ijtimoiy tarmoqlar</h2>
-                        <ul className='flex gap-3 mt-6'>
-                            <Link to='https://t.me/AL_Saray_Travel'>
-                                <li className='cursor-pointer py-3 px-3 rounded-full bg-[#458fea]'>
-                                    <BsTelegram />
-                                </li>
-                            </Link>
-                            <Link to='https://www.instagram.com/al_saray_travel/'>
-                                <li className='cursor-pointer py-3 px-3 rounded-full bg-red-600'>
-                                    <BsInstagram />
-                                </li>
-                            </Link>
-                            <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
-                                <FaFacebook />
+
+                    <ul className='mt-8 md:mt-0'>
+                        <h2 className='text-2xl font-semibold text-white'>ALOQA</h2>
+                        <a href="tel:+998978000571">
+                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                                <FaPhoneAlt className='text-white' /> +998(97) 800-05-71
                             </li>
+                        </a>
+                        <a href="tel:+998985615545">
+                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                                <FaPhoneAlt className='text-white' /> +998(98) 561-55-45
+                            </li>
+                        </a>
+                        <a href="mailto:umraziyorat777@gmail.com">
+                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                                <MdEmail className='text-white' /> saraytravel
+                            </li>
+                        </a>
+                        <a href="">
+                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200 w-[100%]'>
+                                <FaLocationDot className='text-white' /> Jizzakh Region Sharof Rashidov street, Tashkentlik
+                            </li>
+                        </a>
+                    </ul>
+                    <div className='mt-8 w-full'>
+                        <h2 className='text-2xl font-semibold text-white'>Ijtimoiy tarmoqlar</h2>
+                        <ul className='flex gap-3 mt-6'>
+                            <a href='https://t.me/AL_Saray_Travel' target='_blank' rel='noopener noreferrer' className='text-white cursor-pointer py-3 px-3 rounded-full bg-[#458fea]'>
+                                <BsTelegram />
+                            </a>
+                            <a href='https://www.instagram.com/al_saray_travel/' target='_blank' rel='noopener noreferrer' className='text-white cursor-pointer py-3 px-3 rounded-full bg-red-600'>
+                                <BsInstagram />
+                            </a>
+                            <a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer' className='text-white cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
+                                <FaFacebook />
+                            </a>
                         </ul>
-                        <ul className='grid grid-cols-3 gap-2 mt-8 w-[50%]'>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="" /></li>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart-thumbnail.png" alt="" /></li>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORHy0ONrTWdaly5oh65rM8KcbLAiU9F5PpQ&s" alt="" /></li>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://api.logobank.uz/media/logos_png/Uzcard-01.png" alt="" /></li>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Paymeuz_logo.png/2560px-Paymeuz_logo.png" alt="" /></li>
-                            <li className='w-[50px] h-[35px] rounded-[5px] bg-white flex items-center justify-center'><img className='object-cover w-[80%]' src="https://click.uz/click/images/click-white.jpg" alt="" /></li>
+                        <ul className='grid grid-cols-3 gap-2 mt-8 2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] sm:w-[40%] w-[55%]'>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="Visa Logo" />
+                            </li>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart-thumbnail.png" alt="MasterCard Logo" />
+                            </li>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORHy0ONrTWdaly5oh65rM8KcbLAiU9F5PpQ&s" alt="American Express Logo" />
+                            </li>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://api.logobank.uz/media/logos_png/Uzcard-01.png" alt="Uzcard Logo" />
+                            </li>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Paymeuz_logo.png/2560px-Paymeuz_logo.png" alt="Payme Logo" />
+                            </li>
+                            <li className='w-12 h-9 rounded bg-white flex items-center justify-center'>
+                                <img className='object-cover w-4/5' src="https://click.uz/click/images/click-white.jpg" alt="Click Logo" />
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div className='w-[100%] h-[100px] border-t border-[rgb(99,99,99,0.4)] flex justify-between items-center'>
-                    <p className='text-white 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[14px] text-[12px]'>© 2022-2023 ООО «IQRO TRAVEL»</p>
+                <div className='w-full h-24 border-t border-gray-600 flex justify-between items-center'>
+                    <p className='text-white text-sm'>© 2022-2023 ООО «AL SARAY»</p>
                     <ul className='flex gap-4 items-center'>
-                        <li className='text-white font-semibol 2xl:block xl:block lg:block md:block sm:hidden hidden'>Yaratuvchi</li>
-                        <li className='text-white font-semibol cursor-pointer'>IT park</li>
-                        <li className='w-[35px] cursor-pointer h-[35px] bg-[gray] bg-opacity-25 rounded-[50%] flex items-center justify-center text-white' onClick={scrollToTop}><BiUpArrow /></li>
+                        <li className='text-white font-semibold hidden md:block'>Yaratuvchi</li>
+                        <li className='text-white font-semibold hidden md:block'>IT park</li>
+                        <li className='w-9 h-9 bg-gray-300 bg-opacity-25 rounded-full flex items-center justify-center text-white cursor-pointer' onClick={scrollToTop}>
+                            <BiUpArrow />
+                        </li>
                     </ul>
                 </div>
             </div>
