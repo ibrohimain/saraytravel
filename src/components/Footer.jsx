@@ -6,6 +6,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import { Link as ScrollLink } from 'react-scroll';
 import logo from '../assets/al_sarays-removebg-preview.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -50,9 +51,9 @@ const Footer = () => {
                         <a href="tel:+998985615545" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
                             <FaPhoneAlt className="text-white" /> +998(98) 561-55-45
                         </a>
-                        <a href="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <Link to="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
                             <MdEmail className="text-white" /> saraytravel
-                        </a>
+                        </Link>
                         <a href="#" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200 w-full">
                             <FaLocationDot className="text-white" /> Jizzax viloyati Sharof Rashidov ko'chasi, Toshkentlik
                         </a>
