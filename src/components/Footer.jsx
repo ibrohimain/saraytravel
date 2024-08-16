@@ -45,11 +45,11 @@ const Footer = () => {
 
                     <ul className='mt-8 md:mt-0'>
                         <h2 className='text-2xl font-semibold text-white'>ALOQA</h2>
-                        <a href="tel:+998978000571">
-                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                        <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            <a href="tel:+998978000571">
                                 <FaPhoneAlt className='text-white' /> +998(97) 800-05-71
-                            </li>
-                        </a>
+                            </a>
+                        </li>
                         <a href="tel:+998985615545">
                             <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
                                 <FaPhoneAlt className='text-white' /> +998(98) 561-55-45
