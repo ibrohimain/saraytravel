@@ -68,11 +68,12 @@ const Footer = () => {
                             <a href="https://www.instagram.com/al_saray_travel/" target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer py-3 px-3 rounded-full bg-red-600">
                                 <BsInstagram />
                             </a>
-                            <Link to='https://www.facebook.com/Omonxuja Muxtorov'>
+                            <a href='https://www.facebook.com/OmonxujaMuxtorov' target='_blank' rel='noopener noreferrer'>
                                 <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
                                     <FaFacebook />
                                 </li>
-                            </Link>
+                            </a>
+
                         </ul>
                         <ul className="grid grid-cols-3 gap-2 mt-8 w-4/5">
                             {[
