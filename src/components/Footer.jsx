@@ -45,27 +45,20 @@ const Footer = () => {
 
                     <ul className='mt-8 md:mt-0'>
                         <h2 className='text-2xl font-semibold text-white'>ALOQA</h2>
-                        <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
-                            <a href="tel:+998978000571">
-                                <FaPhoneAlt className='text-white' /> +998(97) 800-05-71
-                            </a>
-                        </li>
-                        <a href="tel:+998985615545">
-                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
-                                <FaPhoneAlt className='text-white' /> +998(98) 561-55-45
-                            </li>
+                        <a href="tel:+998978000571" className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            <FaPhoneAlt className='text-white' /> +998(97) 800-05-71
                         </a>
-                        <a href="mailto:umraziyorat777@gmail.com">
-                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
-                                <MdEmail className='text-white' /> saraytravel
-                            </li>
+                        <a href="tel:+998985615545" className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            <FaPhoneAlt className='text-white' /> +998(98) 561-55-45
                         </a>
-                        <a href="">
-                            <li className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200 w-[100%]'>
-                                <FaLocationDot className='text-white' /> Jizzakh Region Sharof Rashidov street, Tashkentlik
-                            </li>
+                        <a href="mailto:umraziyorat777@gmail.com" className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200'>
+                            <MdEmail className='text-white' /> saraytravel
+                        </a>
+                        <a href="" className='flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white cursor-pointer transition duration-200 w-[100%]'>
+                            <FaLocationDot className='text-white' /> Jizzax viloyati Sharof Rashidov ko'chasi, Toshkentlik
                         </a>
                     </ul>
+
                     <div className='mt-8 w-full'>
                         <h2 className='text-2xl font-semibold text-white'>Ijtimoiy tarmoqlar</h2>
                         <ul className='flex gap-3 mt-6'>
