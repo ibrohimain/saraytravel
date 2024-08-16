@@ -139,21 +139,21 @@ const Header = () => {
                             </button>
                         </Link>
                         <ul className='flex items-center gap-2 text-white text-[20px]'>
-                            <Link to='https://t.me/AL_Saray_Travel'>
+                            <a href='https://t.me/AL_Saray_Travel' target='_blank'>
                                 <li className='cursor-pointer py-3 px-3 rounded-full bg-[#458fea]'>
                                     <BsTelegram />
                                 </li>
-                            </Link>
-                            <Link to='https://www.instagram.com/al_saray_travel/'>
+                            </a>
+                            <a href='https://www.instagram.com/al_saray_travel/' target='_blank'>
                                 <li className='cursor-pointer py-3 px-3 rounded-full bg-red-600'>
                                     <BsInstagram />
                                 </li>
-                            </Link>
-                            <Link to='https://www.facebook.com/Omonxuja Muxtorov'>
+                            </a>
+                            <a href='https://www.facebook.com/Omonxuja Muxtorov' target='_blank'>
                                 <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
                                     <FaFacebook />
                                 </li>
-                            </Link>
+                            </a>
                         </ul>
                     </div>
                 </div>

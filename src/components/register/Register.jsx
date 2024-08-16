@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const [adults, setAdults] = useState(0);
@@ -24,17 +25,20 @@ const Register = () => {
             </div>
             <div className="w-[85%] mx-auto h-[600px] 2xl:flex xl:flex lg:flex md:flex sm:block block  justify-between absolute left-[7.5%] top-[40%]">
                 <div className="2xl:w-[48%] xl:w-[48%] lg:w-[48%] md:w-[48%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[50%] h-[50%] 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-6 mt-6 shadow-2xl bg-white rounded-[30px] animate-slideInLeft">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e9e44e6a3d2aeb3eaa3f9d0f8faed22&ll=67.817556%2C40.155219&z=15" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+                    <iframe src="https://yandex.uz/map-widget/v1/?ll=67.817478%2C40.155412&z=15&pt=67.817478,40.155412,pm2rdl" width="100%" height="100%" frameborder="1" allowfullscreen="true" className='rounded-[30px]'></iframe>
+
 
                 </div>
                 <div className="2xl:w-[48%] xl:w-[48%] lg:w-[48%] md:w-[48%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[50%] h-[50%] 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-6 mt-6 shadow-2xl bg-white rounded-[30px] flex items-center justify-center animate-slideInRight">
                     <div className="w-[85%] h-[35%]">
                         <div className="w-full h-auto 2xl:flex xl:flex lg:flex md:flex sm:flex block items-center gap-4">
-                            <h2 className="text-black 2xl:text-[32px] xl:text-[30px] lg:text-[28px] md:text-[26px] sm:text-[24px] text-[18px] font-semibold w-[250px] 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-0 mb-4">UMRA SAFARI UCHUN ARIZA</h2>
+                            <h2 className="text-black 2xl:text-[30px] xl:text-[30px] lg:text-[28px] md:text-[26px] sm:text-[24px] text-[16px] font-semibold w-[250px] 2xl:mb-0 xl:mb-0 lg:mb-0 md:mb-0 sm:mb-0 mb-4">UMRA SAFARI UCHUN ARIZA</h2>
                             <span className="px-3 py-[0.7rem] bg-red-500 rounded text-white text-sm font-medium animate-pulse">Chegirma</span>
                         </div>
                         <div className='w-[100%] flex items-center mt-10'>
-                            <button className='bg-[#00806b] text-white py-2.5 px-8 rounded-[5px]'>Ro'yxatdan o'tish</button>
+                            <a href='https://thedarik.github.io/' target='_blank'>
+                                <button className='bg-[#00806b] text-white py-2.5 px-8 rounded-[5px]'>Ro'yxatdan o'tish</button>
+                            </a>
                         </div>
                     </div>
                 </div>
