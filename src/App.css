@@ -22,7 +22,8 @@
 body {
   background-color: #1a202c;
   color: #c0bfbf;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -230,3 +231,5 @@ ul.list {
 .slick-arrow {
   display: none !important;
 }
+
+

@@ -47,6 +47,11 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
 
+    // Handle link click and close menu
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <div
             className={`2xl:w-[1500px] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-[90px] mx-auto fixed header z-50 ${scrolled ? 'scrolled' : ''}`}
@@ -65,6 +70,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
+                                    onClick={handleLinkClick} // Close menu on click
                                 >
                                     Biz haqimizda
                                 </ScrollLink>
@@ -75,6 +81,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
+                                    onClick={handleLinkClick} // Close menu on click
                                 >
                                     Tariflar
                                 </ScrollLink>
@@ -85,6 +92,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
+                                    onClick={handleLinkClick} // Close menu on click
                                 >
                                     Hujjatlar
                                 </ScrollLink>
@@ -95,6 +103,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
+                                    onClick={handleLinkClick} // Close menu on click
                                 >
                                     Savollar
                                 </ScrollLink>
@@ -105,6 +114,7 @@ const Header = () => {
                                     smooth={true}
                                     duration={500}
                                     className='flex items-center gap-1 cursor-pointer'
+                                    onClick={handleLinkClick} // Close menu on click
                                 >
                                     Aloqa
                                 </ScrollLink>
@@ -140,30 +150,30 @@ const Header = () => {
                 </div>
             </div>
             {menuOpen && (
-                <div className='fixed top-[90px] left-0 w-[350px] h-[450px] bg-white z-40 shadow-lg'>
+                <div className='fixed top-[90px] left-0 w-[350px] h-[450px] bg-black bg-opacity-30 z-40 shadow-lg text-white'>
                     <ul className='flex flex-col items-start p-4'>
                         <li className='py-2'>
-                            <ScrollLink to='aboutUs' smooth={true} duration={500} className='cursor-pointer'>
+                            <ScrollLink to='aboutUs' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>
                                 Biz haqimizda
                             </ScrollLink>
                         </li>
                         <li className='py-2'>
-                            <ScrollLink to='offer' smooth={true} duration={500} className='cursor-pointer'>
+                            <ScrollLink to='offer' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>
                                 Tariflar
                             </ScrollLink>
                         </li>
                         <li className='py-2'>
-                            <ScrollLink to='document' smooth={true} duration={500} className='cursor-pointer'>
+                            <ScrollLink to='document' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>
                                 Hujjatlar
                             </ScrollLink>
                         </li>
                         <li className='py-2'>
-                            <ScrollLink to='quesion' smooth={true} duration={500} className='cursor-pointer'>
+                            <ScrollLink to='quesion' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>
                                 Savollar
                             </ScrollLink>
                         </li>
                         <li className='py-2'>
-                            <ScrollLink to='footer' smooth={true} duration={500} className='cursor-pointer'>
+                            <ScrollLink to='footer' smooth={true} duration={500} className='cursor-pointer' onClick={handleLinkClick}>
                                 Aloqa
                             </ScrollLink>
                         </li>
