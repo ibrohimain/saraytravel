@@ -135,7 +135,7 @@ const Header = () => {
                         <Link to='tel:+998880156869'>
                             <button className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden items-center px-5 py-2 rounded-[20px] border border-[var(--button-border-color)] border-opacity-20 transition duration-500 text-[var(--button-text-color)] hover:border-[var(--button-border-color)] hover:text-[var(--button-text-color)] bg-opacity-20 bg-gray-500 2xl:text-[16px] xl:text-[16px] lg:text-[16px]'>
                                 <BiPhone />
-                                +998(88)025-68-69
+                                +998 (91) 590 66 63
                             </button>
                         </Link>
                         <ul className='flex items-center gap-2 text-white text-[20px]'>
@@ -149,9 +149,11 @@ const Header = () => {
                                     <BsInstagram />
                                 </li>
                             </Link>
-                            <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
-                                <FaFacebook />
-                            </li>
+                            <Link to='https://www.facebook.com/Omonxuja Muxtorov'>
+                                <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
+                                    <FaFacebook />
+                                </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>

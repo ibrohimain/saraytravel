@@ -51,15 +51,15 @@ const Footer = () => {
                         <a href="tel:+998985615545" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
                             <FaPhoneAlt className="text-white" /> +998(98) 561-55-45
                         </a>
-                        <Link to="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
+                        <a href="mailto:umraziyorat777@gmail.com" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200">
                             <MdEmail className="text-white" /> saraytravel
-                        </Link>
+                        </a>
                         <a href="#" className="flex gap-2 items-center mt-4 text-lg text-gray-300 hover:text-white transition duration-200 w-full">
                             <FaLocationDot className="text-white" /> Jizzax viloyati Sharof Rashidov ko'chasi, Toshkentlik
                         </a>
                     </ul>
 
-                    <div className="mt-8 w-full ">
+                    <div className="2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-8 w-full ">
                         <h2 className="text-2xl font-semibold text-white">Ijtimoiy tarmoqlar</h2>
                         <ul className="flex gap-3 mt-6">
                             <a href="https://t.me/AL_Saray_Travel" target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer py-3 px-3 rounded-full bg-[#458fea]">

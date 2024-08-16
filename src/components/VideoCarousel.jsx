@@ -37,7 +37,7 @@ const FotoCarousel = () => {
         <div className='w-full h-[600px] offer'>
             <div className='w-[85%] mx-auto pt-20'>
                 <div className='w-full flex flex-col justify-center items-center'>
-                    <h2 className='text-black font-semibold text-[30px]'>VIDEO <span className='text-[#00806f]'>GALEREYA</span></h2>
+                    <h2 className='text-black font-semibold text-[30px]'>VIDEO <span className='text-[#00806b]'>GALEREYA</span></h2>
                 </div>
                 <div className='w-full mt-10'>
                     <Slider {...settings}>

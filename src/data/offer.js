@@ -6,15 +6,15 @@ export const offer = [
     {
         id: 1,
         img: bir,
-        name: "UMRZ ZIYORAT",
+        name: "UMRA ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
-        price: "15 860 000 SO'M",
-        relly_price: 1300,
+        price: "15 194 400 SO'M",
+        relly_price: 1200,
     },
     {
         id: 2,
         img: ikki,
-        name: "UMRZ ZIYORAT",
+        name: "UMRA ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
         price: "16 470 000 SO'M",
         relly_price: 1350,
@@ -22,7 +22,7 @@ export const offer = [
     {
         id: 3,
         img: uch,
-        name: "UMRZ ZIYORAT",
+        name: "UMRA ZIYORAT",
         data: "SHU OYDA - 15 KUNLIK",
         price: "22 570 000 SO'M",
         relly_price: 1850,

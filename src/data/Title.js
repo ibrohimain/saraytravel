@@ -42,13 +42,13 @@ export const title = [
     {
         id: 6,
         number: '06',
-        name: "Visa olishga yordam berish",
+        name: " Tez fursat ichida Visa olishga yordam berish",
         img: olti,
     },
     {
         id: 7,
         number: '07',
-        name: "Ziyoratchilarni umra safariga to'liq tayyorlash",
+        name: "Ziyoratchilarni Umra safariga to'liq tayyorlash",
         img: yetti,
     },
     {

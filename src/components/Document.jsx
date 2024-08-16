@@ -11,7 +11,7 @@ const Document = () => {
                     <div className='2xl:w-[60%] xl:w-[60%] lg:w-[60%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[60%] sm:h-[60%] h-[70%]'>
                         <div className='w-[100%] h-[20%] leading-10'>
                             <h2 className='2xl:text-[40px] xl:text-[38px] lg:text-[36px] md:text-[34px] sm:text-[32px] text-[30px] text-[black] font-semibold'>Umra safari uchun</h2>
-                            <span className='2xl:text-[40px] xl:text-[38px] lg:text-[36px] md:text-[34px] sm:text-[32px] text-[30px] text-[#00805a] font-semibold'>kerakli hujjatlar</span>
+                            <span className='2xl:text-[40px] xl:text-[38px] lg:text-[36px] md:text-[34px] sm:text-[32px] text-[30px] text-[#00806b] font-semibold'>kerakli hujjatlar</span>
                         </div>
                         <div className='w-[100%] h-[80%] grid grid-cols-2 2xl:gap-8 xl:gap-8 lg:gap-6 md:gap-6 sm:gap-6 gap-4'>
                             {travel.map((item, index) => (
@@ -35,7 +35,7 @@ const Document = () => {
                             </div>
                             <div className='w-[100%] h-[30%]'>
                                 <Link to='https://t.me/Muxtorov_Omonxuja'>
-                                    <button className='w-[100%] h-[60px] bg-[#008075] text-white text-[18px] font-medium rounded-[15px] mt-10'>Bepul Maslahat</button>
+                                    <button className='w-[100%] h-[60px] bg-[#00806b] text-white text-[18px] font-medium rounded-[15px] mt-10'>Bepul Maslahat</button>
                                 </Link>
                             </div>
                         </div>

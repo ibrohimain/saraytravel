@@ -34,7 +34,7 @@ const Register = () => {
                             <span className="px-3 py-[0.7rem] bg-red-500 rounded text-white text-sm font-medium animate-pulse">Chegirma</span>
                         </div>
                         <div className='w-[100%] flex items-center mt-10'>
-                            <button className='bg-[#007580] text-white py-2.5 px-8 rounded-[5px]'>Ro'yxatdan o'tish</button>
+                            <button className='bg-[#00806b] text-white py-2.5 px-8 rounded-[5px]'>Ro'yxatdan o'tish</button>
                         </div>
                     </div>
                 </div>
