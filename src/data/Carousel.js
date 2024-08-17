@@ -1,7 +1,6 @@
 import bir from '../assets/carousel.img/alsaray1.jpg'
 import ikki from '../assets/carousel.img/alsaray2.jpg'
 import uch from '../assets/carousel.img/alsaray3.jpg'
-import tort from '../assets/carousel.img/alsaray3.jpg'
 
 export const carousel = [
     {
@@ -16,10 +15,7 @@ export const carousel = [
         id: 3,
         img: uch,
     },
-    {
-        id: 4,
-        img: tort,
-    },
+
 
 ]
 
