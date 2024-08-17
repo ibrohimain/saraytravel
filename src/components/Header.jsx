@@ -4,12 +4,14 @@ import { BsInstagram, BsTelegram } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../assets/al_sarays-removebg-preview.png'
+import logo from '../assets/al_sarays-removebg-preview.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [openModal, setOpenModal] = useState(false); // State for modal
+
     const menuRef = useRef(null); // Ref for the menu
 
     useEffect(() => {
@@ -35,7 +37,8 @@ const Header = () => {
 
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setMenuOpen(false); // Close menu if clicked outside
+                setMenuOpen(true); // Close menu if clicked outside
+                setOpenModal(false); // Close modal if clicked outside
             }
         };
 
@@ -48,14 +51,16 @@ const Header = () => {
             window.removeEventListener('resize', handleResize);
             document.removeEventListener('mousedown', handleClickOutside); // Cleanup listener
         };
-    }, [menuOpen]);
+    }, [menuOpen, openModal]);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+        setOpenModal(!openModal); // Toggle modal state
     };
 
     const handleLinkClick = () => {
         setMenuOpen(false);
+        setOpenModal(false); // Close modal on link click
     };
 
     return (
@@ -128,7 +133,6 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className='cursor-pointer 2xl:block xl:flex lg:hidden md:flex sm:flex flex items-center justify-center text-[40px] font-semibold'>
-                        {/* <h2 className='2xl:text-[40px] xl:text-[40px] lg:text-[38px] md:text-[32px] sm:text-[32px] text-[28px]'>AL SARAY</h2> */}
                         <img src={logo} alt="" className='2xl:w-[250px] xl:w-[250px] lg:w-[250px] md:w-[200px] sm:w-[180px] w-[200px]' />
                     </div>
                     <div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden items-center gap-8'>

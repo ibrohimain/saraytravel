@@ -73,7 +73,7 @@ const Footer = () => {
                             </a>
 
                         </ul>
-                        <ul className="grid grid-cols-3 gap-2 mt-8 w-4/5">
+                        <ul className="grid grid-cols-3 gap-2 mt-8 2xl:w-[55%] xl:w-[55%] lg:w-[65%] md:w-[45%] sm:w-[30%] w-[50%]">
                             {[
                                 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png',
                                 'https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart-thumbnail.png',

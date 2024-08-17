@@ -1,7 +1,7 @@
-import bir from '../assets/carousel.img/01.png'
-import ikki from '../assets/carousel.img/02.png'
-import uch from '../assets/carousel.img/03.png'
-import tort from '../assets/carousel.img/04.png'
+import bir from '../assets/carousel.img/alsaray1.jpg'
+import ikki from '../assets/carousel.img/alsaray2.jpg'
+import uch from '../assets/carousel.img/alsaray3.jpg'
+import tort from '../assets/carousel.img/alsaray3.jpg'
 
 export const carousel = [
     {
@@ -22,3 +22,19 @@ export const carousel = [
     },
 
 ]
+
+
+export const videoCarousels = [
+    {
+        id: 1,
+        vid: "https://www.youtube.com/embed/tez3XShZvZ4?si=iXgZXgEr5aaebydR",
+    },
+    {
+        id: 2,
+        vid: "https://www.youtube.com/embed/CFa5-azTdFk?si=-gWmyg0yTTNJeqx_",
+    },
+    {
+        id: 3,
+        vid: "https://www.youtube.com/embed/TfcS3wd97XA?si=hYsjjueu9WDNG9mP",
+    },
+];
