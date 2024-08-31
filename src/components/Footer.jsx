@@ -55,7 +55,7 @@ const Footer = () => {
                             <MdEmail className="text-white" /> alsaraytravel777@gmail.com
                         </a>
                         <a href="#" className="flex gap-2 items-center mt-4 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] text-[14px]  text-gray-300 hover:text-white transition duration-200 w-full">
-                            <FaLocationDot className="text-white" /> Jizzax viloyati Sharof Rashidov ko'chasi, Toshkentlik
+                            <FaLocationDot className="text-white" /> Jizakhlik mahala, Jizzakh, Jizzakh region, Uzbekistan
                         </a>
                     </ul>
 
@@ -68,7 +68,7 @@ const Footer = () => {
                             <a href="https://www.instagram.com/al_saray_travel/" target="_blank" rel="noopener noreferrer" className="text-white cursor-pointer py-3 px-3 rounded-full bg-red-600">
                                 <BsInstagram />
                             </a>
-                            <a href='https://www.facebook.com/OmonxujaMuxtorov' target='_blank' rel='noopener noreferrer' className='text-white cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
+                            <a href='https://www.facebook.com/Al.Saray.Travel' target='_blank' rel='noopener noreferrer' className='text-white cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
                                 <FaFacebook />
                             </a>
 

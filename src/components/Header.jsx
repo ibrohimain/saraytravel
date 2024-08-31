@@ -153,7 +153,7 @@ const Header = () => {
                                     <BsInstagram />
                                 </li>
                             </a>
-                            <a href='https://www.facebook.com/Omonxuja Muxtorov' target='_blank'>
+                            <a href='https://www.facebook.com/Al.Saray.Travel' target='_blank'>
                                 <li className='cursor-pointer py-3 px-3 rounded-full bg-[#3046b3]'>
                                     <FaFacebook />
                                 </li>

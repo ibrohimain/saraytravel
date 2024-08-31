@@ -45,7 +45,7 @@ const FotoCarousel = () => {
                             <div key={index} className='px-4'>
                                 <div className='custom-shadow custom-shadow-hover w-full h-[300px] bg-white rounded-[30px] cursor-pointer transform transition-transform duration-300 hover:translate-y-[-8px] hover:shadow-lg flex items-center justify-center'>
                                     <div className='w-full h-[90%] flex items-center justify-center'>
-                                        <img src={item.img} alt="" className='w-[90%] h-[95%] rounded-[5px] object-contain' />
+                                        <img src={item.img} alt="alsaray" className='w-[90%] h-[95%] rounded-[5px] object-contain' />
                                     </div>
                                 </div>
                             </div>
